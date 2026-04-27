@@ -3,311 +3,770 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maria Boudjelal · Creative Designer ✦</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23FF8FAB'/><rect width='100' height='100' rx='22' fill='url(%23g)' opacity='.4'/><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23fff' stop-opacity='.5'/><stop offset='1' stop-color='%23e05580' stop-opacity='0'/></linearGradient></defs><text y='.85em' font-size='64' x='17'>🎨</text></svg>" />
+  <title>Maria Boudjelal · Creative Designer & Developer</title>
+  <meta name="description" content="Maria Boudjelal — Graphic Designer, AI Art Creator & Developer based in Algiers, Algeria." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231e40af'/><text y='.85em' font-size='64' x='17'>✦</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Nunito:wght@400;600;700;800;900&family=Pacifico&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div id="sparkles-container"></div>
-
 <!-- NAVBAR -->
 <nav id="navbar">
-  <div class="nav-logo">✦ Maria<span class="logo-accent">.</span></div>
-  <ul class="nav-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#experience">Journey</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta"><i class="fa-regular fa-envelope"></i> Hire Me</a>
-  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">MB<span class="logo-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#hero" data-section="hero">Home</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#work" data-section="work">Work</a></li>
+      <li><a href="#experience" data-section="experience">Journey</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">
+      <span>Hire Me</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg-blobs">
-    <div class="blob blob1"></div>
-    <div class="blob blob2"></div>
-    <div class="blob blob3"></div>
-  </div>
-  <div class="floating-deco deco1">🌸</div>
-  <div class="floating-deco deco2"><i class="fa-solid fa-star"></i></div>
-  <div class="floating-deco deco3">🎀</div>
-  <div class="floating-deco deco4"><i class="fa-solid fa-heart"></i></div>
-  <div class="floating-deco deco5">💕</div>
-  <div class="floating-deco deco6"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#hero" onclick="closeMobileMenu()">Home</a></li>
+    <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+    <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+    <li><a href="#work" onclick="closeMobileMenu()">Work</a></li>
+    <li><a href="#experience" onclick="closeMobileMenu()">Journey</a></li>
+    <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+  </ul>
+</div>
 
-  <div class="ticker-bar">
-    <div class="ticker-track">
-      <span><i class="fa-solid fa-pen-nib"></i>&nbsp;Graphic Designer</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-lightbulb"></i>&nbsp;Creative Thinker</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-palette"></i>&nbsp;Brand Storyteller</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-robot"></i>&nbsp;AI Art Creator</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-film"></i>&nbsp;Motion Graphics</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-box"></i>&nbsp;Packaging Design</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-brands fa-instagram"></i>&nbsp;Social Media</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-pen-nib"></i>&nbsp;Graphic Designer</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-lightbulb"></i>&nbsp;Creative Thinker</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-palette"></i>&nbsp;Brand Storyteller</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-robot"></i>&nbsp;AI Art Creator</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-      <span><i class="fa-solid fa-film"></i>&nbsp;Motion Graphics</span>&nbsp;&nbsp;·&nbsp;&nbsp;
-    </div>
-  </div>
+<!-- SECTION INDICATOR -->
+<div class="section-dots" id="section-dots">
+  <button class="sdot active" data-target="hero" title="Home"></button>
+  <button class="sdot" data-target="about" title="About"></button>
+  <button class="sdot" data-target="skills" title="Skills"></button>
+  <button class="sdot" data-target="work" title="Work"></button>
+  <button class="sdot" data-target="experience" title="Journey"></button>
+  <button class="sdot" data-target="contact" title="Contact"></button>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════ -->
+<section id="hero" class="snap-section">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-grid-overlay"></div>
 
   <div class="hero-content">
-    <p class="hero-eyebrow" data-aos="fade-down" data-aos-duration="400">Hey, I'm</p>
-    <h1 class="hero-name" data-aos="zoom-in" data-aos-duration="500">
-      <span class="name-maria">Maria</span><br/>
-      <span class="name-boudjelal">Boudjelal</span>
-    </h1>
-    <div class="hero-tags" data-aos="fade-up" data-aos-duration="400" data-aos-delay="50">
-      <span class="tag tag-peach"><i class="fa-solid fa-pen-nib"></i> Graphic Designer</span>
-      <span class="tag tag-lavender"><i class="fa-solid fa-robot"></i> AI Art Creator</span>
-      <span class="tag tag-rose">✦ Brand Magician</span>
+    <div class="hero-left">
+      <div class="eyebrow-badge">
+        <span class="avail-pulse"></span>
+        Available for projects
+      </div>
+      <h1 class="hero-heading">
+        <span class="line-reveal">Maria</span>
+        <span class="line-reveal delay-1">Boudjelal</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-text" id="role-text">Graphic Designer</span>
+        <span class="role-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        CS graduate turned creative director. I blend technical precision with visual storytelling to build brands that stick.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">
+          View My Work
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num-row">
+            <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+          </div>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num-row">
+            <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+          </div>
+          <span class="stat-label">Years Designing</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num-row">
+            <span class="stat-num" data-target="3">0</span><span class="stat-plus">✦</span>
+          </div>
+          <span class="stat-label">Languages</span>
+        </div>
+      </div>
     </div>
-    <p class="hero-desc" data-aos="fade-up" data-aos-duration="400" data-aos-delay="80">
-      I make visuals people can't stop looking at.<br/>Pink is kind of my thing. 💕
-    </p>
-    <div class="hero-btns" data-aos="fade-up" data-aos-duration="400" data-aos-delay="100">
-      <a href="#work" class="btn-primary"><i class="fa-solid fa-images"></i> See My Work</a>
-      <a href="#contact" class="btn-secondary"><i class="fa-regular fa-envelope"></i> Let's Talk</a>
+
+    <div class="hero-right">
+      <div class="hero-visual">
+        <div class="hv-orbit-ring ring1"></div>
+        <div class="hv-orbit-ring ring2"></div>
+        <div class="hv-center-card">
+          <div class="hvc-avatar">
+            <i class="fa-solid fa-user-pen"></i>
+          </div>
+          <div class="hvc-name">Maria B.</div>
+          <div class="hvc-title">Designer · Developer</div>
+          <div class="hvc-location"><i class="fa-solid fa-location-dot"></i> Algiers, DZ</div>
+        </div>
+        <div class="orbit-badge ob1"><i class="fa-solid fa-palette"></i></div>
+        <div class="orbit-badge ob2"><i class="fa-solid fa-robot"></i></div>
+        <div class="orbit-badge ob3"><i class="fa-solid fa-code"></i></div>
+        <div class="orbit-badge ob4"><i class="fa-solid fa-film"></i></div>
+      </div>
     </div>
   </div>
 
-  <div class="hero-polaroids" data-aos="fade-left" data-aos-duration="500" data-aos-delay="150">
-    <div class="polaroid pol1" onclick="this.classList.toggle('pol-spin')">
-      <div class="pol-img pol-img-1"><i class="fa-solid fa-palette fa-2x pol-icon"></i></div>
-      <p>designs</p>
+  <div class="ticker-strip">
+    <div class="ticker-inner" id="ticker">
+      <span>Graphic Design</span>
+      <span class="ticker-dot">✦</span>
+      <span>AI Art</span>
+      <span class="ticker-dot">✦</span>
+      <span>Brand Identity</span>
+      <span class="ticker-dot">✦</span>
+      <span>Motion Graphics</span>
+      <span class="ticker-dot">✦</span>
+      <span>Packaging</span>
+      <span class="ticker-dot">✦</span>
+      <span>Social Media</span>
+      <span class="ticker-dot">✦</span>
+      <span>Web Development</span>
+      <span class="ticker-dot">✦</span>
+      <span>LaTeX Reports</span>
+      <span class="ticker-dot">✦</span>
+      <span>Graphic Design</span>
+      <span class="ticker-dot">✦</span>
+      <span>AI Art</span>
+      <span class="ticker-dot">✦</span>
+      <span>Brand Identity</span>
+      <span class="ticker-dot">✦</span>
+      <span>Motion Graphics</span>
+      <span class="ticker-dot">✦</span>
+      <span>Packaging</span>
+      <span class="ticker-dot">✦</span>
+      <span>Social Media</span>
+      <span class="ticker-dot">✦</span>
     </div>
-    <div class="polaroid pol2" onclick="this.classList.toggle('pol-spin')">
-      <div class="pol-img pol-img-2"><i class="fa-solid fa-star fa-2x pol-icon"></i></div>
-      <p>magic</p>
-    </div>
-    <div class="polaroid pol3" onclick="this.classList.toggle('pol-spin')">
-      <div class="pol-img pol-img-3"><i class="fa-solid fa-heart fa-2x pol-icon"></i></div>
-      <p>vibes</p>
-    </div>
-  </div>
-
-  <div class="scroll-hint">
-    <span>scroll down</span>
-    <div class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="wavy-top"></div>
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-left" data-aos="fade-right">
-        <div class="about-card">
-          <div class="about-card-inner">
-            <div class="about-card-front">
-              <div class="about-avatar">
-                <div class="avatar-circle"><i class="fa-solid fa-user-pen fa-2x"></i></div>
-                <div class="avatar-ring r1"></div>
-                <div class="avatar-ring r2"></div>
+<!-- ═══════════════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════════════ -->
+<section id="about" class="snap-section">
+  <div class="section-container">
+    <div class="about-layout">
+
+      <div class="about-left-col">
+        <div class="section-eyebrow">About Me</div>
+        <h2 class="section-heading">Design meets <em>engineering</em></h2>
+        <p class="about-body">
+          I'm Maria — a CS graduate from USTHB Algiers who found her true calling at the intersection of technology and creativity. I don't just make things look good; I engineer visual experiences that convert, communicate and leave an impression.
+        </p>
+        <p class="about-body">
+          From building my own e-commerce brand <strong>Rukonsky</strong> to working remotely for a French company, teaching CS and English, and freelancing — I bring entrepreneurial thinking to every brief.
+        </p>
+        <div class="about-tags-wrap">
+          <span class="about-tag"><i class="fa-solid fa-graduation-cap"></i> CS Graduate</span>
+          <span class="about-tag"><i class="fa-solid fa-location-dot"></i> Algiers, Algeria</span>
+          <span class="about-tag"><i class="fa-solid fa-globe"></i> AR · FR · EN</span>
+          <span class="about-tag"><i class="fa-solid fa-store"></i> Founded Rukonsky</span>
+          <span class="about-tag"><i class="fa-solid fa-chalkboard-user"></i> CS Educator</span>
+          <span class="about-tag"><i class="fa-solid fa-earth-africa"></i> IELTS 7.5</span>
+        </div>
+      </div>
+
+      <div class="about-right-col">
+        <!-- Flip Card -->
+        <div class="profile-flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="pfc-inner">
+            <div class="pfc-front">
+              <div class="pfc-avatar-ring">
+                <div class="pfc-avatar"><i class="fa-solid fa-user-pen fa-2x"></i></div>
               </div>
-              <h3>Maria B.</h3>
-              <p class="about-role">Graphic Designer & Developer</p>
-              <div class="about-badges">
-                <span><i class="fa-solid fa-location-dot"></i> Algeria</span>
-                <span><i class="fa-solid fa-laptop-code"></i> CS Grad</span>
-                <span><i class="fa-solid fa-palette"></i> Designer</span>
+              <h3>Maria Boudjelal</h3>
+              <p>Graphic Designer & Developer</p>
+              <div class="pfc-divider"></div>
+              <div class="pfc-skills-row">
+                <div class="pfc-skill-tag">Canva Pro</div>
+                <div class="pfc-skill-tag">AI Art</div>
+                <div class="pfc-skill-tag">React</div>
+                <div class="pfc-skill-tag">LaTeX</div>
               </div>
-              <p class="flip-hint">click to flip ✦</p>
+              <div class="flip-hint-text">Click to flip <i class="fa-solid fa-rotate"></i></div>
             </div>
-            <div class="about-card-back">
-              <h4>Fun Facts 🌸</h4>
-              <ul class="fun-facts">
-                <li><i class="fa-solid fa-heart"></i> Pink is my favourite colour</li>
-                <li><i class="fa-solid fa-graduation-cap"></i> CS grad who became a designer</li>
-                <li><i class="fa-solid fa-robot"></i> Big fan of digital art</li>
-                <li><i class="fa-solid fa-store"></i> Founded my own brand</li>
-                <li><i class="fa-solid fa-chalkboard-user"></i> I teach CS and English</li>
-                <li><i class="fa-solid fa-globe"></i> Arabic, French, English</li>
-                <li><i class="fa-solid fa-credit-card"></i> I pay for all my tools myself</li>
+            <div class="pfc-back">
+              <h4>Fun Facts</h4>
+              <ul class="facts-list">
+                <li><i class="fa-solid fa-check-circle"></i> CS grad who became a designer</li>
+                <li><i class="fa-solid fa-check-circle"></i> Founded my own brand from scratch</li>
+                <li><i class="fa-solid fa-check-circle"></i> I teach CS & English professionally</li>
+                <li><i class="fa-solid fa-check-circle"></i> Trilingual: Arabic, French, English</li>
+                <li><i class="fa-solid fa-check-circle"></i> I pay for all my tools myself</li>
+                <li><i class="fa-solid fa-check-circle"></i> Big fan of AI-generated realistic art</li>
               </ul>
+              <div class="flip-hint-text">Click to flip back <i class="fa-solid fa-rotate"></i></div>
             </div>
           </div>
         </div>
-        <div class="sticker-area">
-          <div class="sticker s1" onclick="this.classList.toggle('sticker-pop')"><i class="fa-solid fa-star"></i></div>
-          <div class="sticker s2" onclick="this.classList.toggle('sticker-pop')">🌸</div>
-          <div class="sticker s3" onclick="this.classList.toggle('sticker-pop')"><i class="fa-solid fa-heart"></i></div>
-          <div class="sticker s4" onclick="this.classList.toggle('sticker-pop')">🎀</div>
-          <div class="sticker s5" onclick="this.classList.toggle('sticker-pop')"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+
+        <!-- Traits hexagons -->
+        <div class="traits-hex-row">
+          <div class="hex-trait"><div class="hex-inner"><span>Creative</span></div></div>
+          <div class="hex-trait"><div class="hex-inner"><span>Precise</span></div></div>
+          <div class="hex-trait"><div class="hex-inner"><span>Bold</span></div></div>
+          <div class="hex-trait"><div class="hex-inner"><span>Reliable</span></div></div>
+          <div class="hex-trait"><div class="hex-inner"><span>Flexible</span></div></div>
         </div>
       </div>
 
-      <div class="about-right" data-aos="fade-left" data-aos-delay="80">
-        <div class="section-label">// about me</div>
-        <h2 class="section-title">Design is my <span class="highlight-pink">love language</span> 💕</h2>
-        <p class="about-text">
-          I'm Maria, a <strong>CS graduate</strong> who is also a <strong>graphic designer</strong>. I mix my tech side with my creative side to make visuals people actually feel something when they look at.
-        </p>
-        <p class="about-text">
-          I do everything from social media posts to full packaging design. I also make AI art that looks nothing like AI, realistic, clean, on-brand. I work mostly in <strong>Canva</strong> and I know how to get great results fast.
-        </p>
-        <p class="about-text">
-          I started my own brand <strong>Rukonsky</strong>, I teach, and I work remotely for a French company (part-time). I pay for every tool I use myself, no shortcuts.
-        </p>
-        <div class="word-cloud">
-          <span class="wc wc1" data-aos="zoom-in" data-aos-delay="0">Creative</span>
-          <span class="wc wc2" data-aos="zoom-in" data-aos-delay="50">Organised</span>
-          <span class="wc wc3" data-aos="zoom-in" data-aos-delay="100">Flexible</span>
-          <span class="wc wc4" data-aos="zoom-in" data-aos-delay="150">Resourceful</span>
-          <span class="wc wc5" data-aos="zoom-in" data-aos-delay="200">Bold</span>
-          <span class="wc wc6" data-aos="zoom-in" data-aos-delay="250">Detail-Oriented</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SKILLS
+     ═══════════════════════════════════════════════ -->
+<section id="skills" class="snap-section">
+  <div class="section-container">
+    <div class="section-header-row">
+      <div>
+        <div class="section-eyebrow">What I Do</div>
+        <h2 class="section-heading">My <em>Expertise</em></h2>
+      </div>
+      <p class="section-sub-right">6 core domains, one creative mind.</p>
+    </div>
+
+    <div class="skills-bento">
+      <div class="skill-tile tile-large" data-hover-color="blue">
+        <div class="tile-icon"><i class="fa-solid fa-palette"></i></div>
+        <div class="tile-content">
+          <h3>Graphic Design</h3>
+          <p>Posts, stories, packaging, logos, books, magazines — all formats, all dimensions.</p>
+          <div class="tile-tools">
+            <span>Canva Pro</span><span>Canva AI</span><span>Overleaf</span>
+          </div>
         </div>
+        <div class="tile-corner-num">01</div>
+      </div>
+
+      <div class="skill-tile tile-medium" data-hover-color="indigo">
+        <div class="tile-icon"><i class="fa-solid fa-robot"></i></div>
+        <div class="tile-content">
+          <h3>AI Art & Mockups</h3>
+          <p>Realistic AI imagery that looks nothing like AI.</p>
+          <div class="tile-tools">
+            <span>Gemini</span><span>ChatGPT</span><span>MS Designer</span>
+          </div>
+        </div>
+        <div class="tile-corner-num">02</div>
+      </div>
+
+      <div class="skill-tile tile-small" data-hover-color="cyan">
+        <div class="tile-icon"><i class="fa-solid fa-box"></i></div>
+        <div class="tile-content">
+          <h3>Packaging & Product</h3>
+          <p>From sketch to shelf — complete product design.</p>
+        </div>
+        <div class="tile-corner-num">03</div>
+      </div>
+
+      <div class="skill-tile tile-small" data-hover-color="violet">
+        <div class="tile-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="tile-content">
+          <h3>Stationery & Print</h3>
+          <p>Card decks, journals, planners, stamps and more.</p>
+        </div>
+        <div class="tile-corner-num">04</div>
+      </div>
+
+      <div class="skill-tile tile-medium" data-hover-color="sky">
+        <div class="tile-icon"><i class="fa-solid fa-film"></i></div>
+        <div class="tile-content">
+          <h3>Motion & Video</h3>
+          <p>Video editing, motion graphics, animated presentations that impress.</p>
+          <div class="tile-tools">
+            <span>CapCut</span><span>Camtasia</span>
+          </div>
+        </div>
+        <div class="tile-corner-num">05</div>
+      </div>
+
+      <div class="skill-tile tile-large right" data-hover-color="blue">
+        <div class="tile-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="tile-content">
+          <h3>Tech & Development</h3>
+          <p>CS grad who codes. Design and engineering in one person — a rare combination that means I understand both brief and build.</p>
+          <div class="tile-tools">
+            <span>React</span><span>Python</span><span>JS</span><span>CSS</span><span>Docker</span>
+          </div>
+        </div>
+        <div class="tile-corner-num">06</div>
+      </div>
+    </div>
+
+    <!-- Radial skills -->
+    <div class="radial-skills-row">
+      <div class="radial-item">
+        <div class="radial-wrap">
+          <svg class="radial-svg" viewBox="0 0 80 80">
+            <circle class="radial-bg" cx="40" cy="40" r="34"/>
+            <circle class="radial-fill" cx="40" cy="40" r="34" data-pct="95"/>
+          </svg>
+          <span class="radial-val">95%</span>
+        </div>
+        <p>Creativity</p>
+      </div>
+      <div class="radial-item">
+        <div class="radial-wrap">
+          <svg class="radial-svg" viewBox="0 0 80 80">
+            <circle class="radial-bg" cx="40" cy="40" r="34"/>
+            <circle class="radial-fill" cx="40" cy="40" r="34" data-pct="90"/>
+          </svg>
+          <span class="radial-val">90%</span>
+        </div>
+        <p>Organisation</p>
+      </div>
+      <div class="radial-item">
+        <div class="radial-wrap">
+          <svg class="radial-svg" viewBox="0 0 80 80">
+            <circle class="radial-bg" cx="40" cy="40" r="34"/>
+            <circle class="radial-fill" cx="40" cy="40" r="34" data-pct="88"/>
+          </svg>
+          <span class="radial-val">88%</span>
+        </div>
+        <p>Adaptability</p>
+      </div>
+      <div class="radial-item">
+        <div class="radial-wrap">
+          <svg class="radial-svg" viewBox="0 0 80 80">
+            <circle class="radial-bg" cx="40" cy="40" r="34"/>
+            <circle class="radial-fill" cx="40" cy="40" r="34" data-pct="92"/>
+          </svg>
+          <span class="radial-val">92%</span>
+        </div>
+        <p>Resourceful</p>
+      </div>
+      <div class="radial-item">
+        <div class="radial-wrap">
+          <svg class="radial-svg" viewBox="0 0 80 80">
+            <circle class="radial-bg" cx="40" cy="40" r="34"/>
+            <circle class="radial-fill" cx="40" cy="40" r="34" data-pct="93"/>
+          </svg>
+          <span class="radial-val">93%</span>
+        </div>
+        <p>Problem Solving</p>
+      </div>
+      <div class="radial-item">
+        <div class="radial-wrap">
+          <svg class="radial-svg" viewBox="0 0 80 80">
+            <circle class="radial-bg" cx="40" cy="40" r="34"/>
+            <circle class="radial-fill" cx="40" cy="40" r="34" data-pct="85"/>
+          </svg>
+          <span class="radial-val">85%</span>
+        </div>
+        <p>Communication</p>
       </div>
     </div>
   </div>
-  <div class="wavy-bottom"></div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="section-label">// what i do</div>
-      <h2 class="section-title">My Superpowers <span class="spin-star">⭐</span></h2>
+<!-- ═══════════════════════════════════════════════
+     WORK
+     ═══════════════════════════════════════════════ -->
+<section id="work" class="snap-section work-dark">
+  <div class="section-container">
+    <div class="section-header-row">
+      <div>
+        <div class="section-eyebrow light">My Portfolio</div>
+        <h2 class="section-heading light">Selected <em>Work</em></h2>
+      </div>
+      <p class="section-sub-right light">Click a category to explore</p>
     </div>
-    <div class="skills-grid">
-      <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="skill-card-shine"></div>
-        <div class="skill-icon-wrap"><i class="fa-solid fa-palette"></i></div>
-        <h3>Graphic Design</h3>
-        <p>Posts, stories, packaging, logos, books, magazines, all formats</p>
-        <div class="skill-tools"><span>Canva Pro</span><span>Canva AI</span><span>Overleaf</span></div>
-        <div class="skill-formats">1:1 · 4:5 · 9:16 · any format</div>
+
+    <!-- Services Grid -->
+    <div class="services-grid">
+      <div class="service-card" onclick="openServiceModal('logos')">
+        <div class="sc-number">01</div>
+        <div class="sc-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <h3>Logo & Branding</h3>
+        <p>Full brand identity from scratch</p>
+        <div class="sc-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
       </div>
-      <div class="skill-card" data-aos="fade-up" data-aos-delay="60">
-        <div class="skill-card-shine"></div>
-        <div class="skill-icon-wrap"><i class="fa-solid fa-robot"></i></div>
-        <h3>AI Art & Mockups</h3>
-        <p>Realistic AI images that look nothing like AI. Seriously.</p>
-        <div class="skill-tools"><span>Gemini</span><span>ChatGPT</span><span>MS Designer</span></div>
-        <div class="skill-formats">Mockups · Models · Digital Art</div>
+      <div class="service-card" onclick="openServiceModal('tshirts')">
+        <div class="sc-number">02</div>
+        <div class="sc-icon"><i class="fa-solid fa-shirt"></i></div>
+        <h3>T-Shirts & Merch</h3>
+        <p>Print-ready graphics & mockups</p>
+        <div class="sc-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
       </div>
-      <div class="skill-card" data-aos="fade-up" data-aos-delay="120">
-        <div class="skill-card-shine"></div>
-        <div class="skill-icon-wrap"><i class="fa-solid fa-box"></i></div>
-        <h3>Product & Packaging</h3>
-        <p>Full product design from the first idea to the final file</p>
-        <div class="skill-tools"><span>Packaging</span><span>T-shirts</span><span>Merch</span></div>
-        <div class="skill-formats">From sketch to shelf</div>
+      <div class="service-card" onclick="openServiceModal('packaging')">
+        <div class="sc-number">03</div>
+        <div class="sc-icon"><i class="fa-solid fa-box"></i></div>
+        <h3>Packaging Design</h3>
+        <p>Beautiful packaging that sells</p>
+        <div class="sc-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
       </div>
-      <div class="skill-card" data-aos="fade-up" data-aos-delay="180">
-        <div class="skill-card-shine"></div>
-        <div class="skill-icon-wrap"><i class="fa-solid fa-book-open"></i></div>
+      <div class="service-card" onclick="openServiceModal('stationery')">
+        <div class="sc-number">04</div>
+        <div class="sc-icon"><i class="fa-solid fa-bookmark"></i></div>
         <h3>Stationery & Print</h3>
-        <p>Card decks, notebooks, journals, planners, stickers, stamps</p>
-        <div class="skill-tools"><span>Card Decks</span><span>Journals</span><span>Planners</span></div>
-        <div class="skill-formats">Full design to print</div>
+        <p>Card decks, journals, planners</p>
+        <div class="sc-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
       </div>
-      <div class="skill-card" data-aos="fade-up" data-aos-delay="240">
-        <div class="skill-card-shine"></div>
-        <div class="skill-icon-wrap"><i class="fa-solid fa-film"></i></div>
-        <h3>Motion & Video</h3>
-        <p>Video editing, motion graphics, animated presentations</p>
-        <div class="skill-tools"><span>CapCut</span><span>Camtasia</span><span>Canva Anim.</span></div>
-        <div class="skill-formats">Motion · Edit · Animate</div>
+      <div class="service-card" onclick="openServiceModal('presentations')">
+        <div class="sc-number">05</div>
+        <div class="sc-icon"><i class="fa-solid fa-display"></i></div>
+        <h3>Presentations</h3>
+        <p>Animated Canva slides that impress</p>
+        <div class="sc-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
       </div>
-      <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="skill-card-shine"></div>
-        <div class="skill-icon-wrap"><i class="fa-solid fa-laptop-code"></i></div>
-        <h3>Tech Background</h3>
-        <p>CS grad who also codes, design and tech in one person</p>
-        <div class="skill-tools"><span>HTML/CSS/JS</span><span>React</span><span>Python</span></div>
-        <div class="skill-formats">Design + Code</div>
+      <div class="service-card" onclick="openServiceModal('latex')">
+        <div class="sc-number">06</div>
+        <div class="sc-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <h3>LaTeX & Reports</h3>
+        <p>Expert academic formatting</p>
+        <div class="sc-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+      </div>
+      <div class="service-card" onclick="openServiceModal('books')">
+        <div class="sc-number">07</div>
+        <div class="sc-icon"><i class="fa-solid fa-book"></i></div>
+        <h3>Book Covers & Magazines</h3>
+        <p>Layouts that grab attention</p>
+        <div class="sc-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+      </div>
+      <div class="service-card" onclick="openServiceModal('video')">
+        <div class="sc-number">08</div>
+        <div class="sc-icon"><i class="fa-solid fa-video"></i></div>
+        <h3>Video & Motion</h3>
+        <p>Edits, reels & motion graphics</p>
+        <div class="sc-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
       </div>
     </div>
 
-    <div class="soft-skills-area" data-aos="fade-up">
-      <h3 class="soft-skills-title">Soft Skills 🌸</h3>
-      <div class="soft-skills-grid">
-        <div class="soft-skill-item"><div class="ss-ring"><svg viewBox="0 0 36 36"><circle class="ss-bg" cx="18" cy="18" r="15"></circle><circle class="ss-fill" cx="18" cy="18" r="15" data-pct="95"></circle></svg><span class="ss-pct">95%</span></div><p>Creativity</p></div>
-        <div class="soft-skill-item"><div class="ss-ring"><svg viewBox="0 0 36 36"><circle class="ss-bg" cx="18" cy="18" r="15"></circle><circle class="ss-fill" cx="18" cy="18" r="15" data-pct="90"></circle></svg><span class="ss-pct">90%</span></div><p>Organisation</p></div>
-        <div class="soft-skill-item"><div class="ss-ring"><svg viewBox="0 0 36 36"><circle class="ss-bg" cx="18" cy="18" r="15"></circle><circle class="ss-fill" cx="18" cy="18" r="15" data-pct="88"></circle></svg><span class="ss-pct">88%</span></div><p>Adaptability</p></div>
-        <div class="soft-skill-item"><div class="ss-ring"><svg viewBox="0 0 36 36"><circle class="ss-bg" cx="18" cy="18" r="15"></circle><circle class="ss-fill" cx="18" cy="18" r="15" data-pct="92"></circle></svg><span class="ss-pct">92%</span></div><p>Resourceful</p></div>
-        <div class="soft-skill-item"><div class="ss-ring"><svg viewBox="0 0 36 36"><circle class="ss-bg" cx="18" cy="18" r="15"></circle><circle class="ss-fill" cx="18" cy="18" r="15" data-pct="85"></circle></svg><span class="ss-pct">85%</span></div><p>Communication</p></div>
-        <div class="soft-skill-item"><div class="ss-ring"><svg viewBox="0 0 36 36"><circle class="ss-bg" cx="18" cy="18" r="15"></circle><circle class="ss-fill" cx="18" cy="18" r="15" data-pct="93"></circle></svg><span class="ss-pct">93%</span></div><p>Problem Solving</p></div>
+    <!-- Portfolio galleries -->
+    <div class="gallery-tabs">
+      <button class="gtab active" onclick="openGallery('posts', this)">
+        <i class="fa-brands fa-instagram"></i> Social Posts
+      </button>
+      <button class="gtab" onclick="openGallery('stories', this)">
+        <i class="fa-solid fa-mobile-screen"></i> Stories
+      </button>
+      <button class="gtab" onclick="openGallery('digital', this)">
+        <i class="fa-solid fa-palette"></i> Digital Art
+      </button>
+      <button class="gtab" onclick="openGallery('mockups', this)">
+        <i class="fa-solid fa-box"></i> Mockups
+      </button>
+      <button class="gtab" onclick="openGallery('journals', this)">
+        <i class="fa-solid fa-book-open"></i> Journals
+      </button>
+      <button class="gtab" onclick="openGallery('notebooks', this)">
+        <i class="fa-solid fa-book"></i> Notebooks
+      </button>
+    </div>
+    <div class="gallery-strip" id="gallery-strip">
+      <div class="gallery-strip-inner" id="gallery-strip-inner">
+        <div class="gallery-placeholder-msg">
+          <i class="fa-solid fa-images"></i>
+          <p>Select a category above to browse designs</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WORK -->
-<section id="work">
-  <div class="wavy-top peach-wavy"></div>
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="section-label">// my work</div>
-      <h2 class="section-title">The Portfolio <i class="fa-solid fa-wand-magic-sparkles icon-accent"></i></h2>
-      <p class="section-sub">Click a folder to see the designs</p>
-    </div>
-    <div class="folders-grid">
-      <div class="folder-float" data-aos="fade-up" data-aos-delay="0" onclick="openGallery('posts')">
-        <div class="folder-icon-wrap"><i class="fa-solid fa-folder-open"></i></div>
-        <div class="folder-label">Social Media Posts</div>
-        <div class="folder-sub">1:1 & 4:5 · 9 designs</div>
-      </div>
-      <div class="folder-float" data-aos="fade-up" data-aos-delay="60" onclick="openGallery('stories')">
-        <div class="folder-icon-wrap"><i class="fa-solid fa-folder-open"></i></div>
-        <div class="folder-label">Stories</div>
-        <div class="folder-sub">9:16 · 5 designs</div>
-      </div>
-      <div class="folder-float" data-aos="fade-up" data-aos-delay="120" onclick="openGallery('digital')">
-        <div class="folder-icon-wrap"><i class="fa-solid fa-folder-open"></i></div>
-        <div class="folder-label">Digital Art</div>
-        <div class="folder-sub">AI art · 12 pieces</div>
-      </div>
-      <div class="folder-float" data-aos="fade-up" data-aos-delay="180" onclick="openGallery('mockups')">
-        <div class="folder-icon-wrap"><i class="fa-solid fa-folder-open"></i></div>
-        <div class="folder-label">Mockups</div>
-        <div class="folder-sub">1:1 · 8 mockups</div>
-      </div>
-      <div class="folder-float" data-aos="fade-up" data-aos-delay="240" onclick="openGallery('journals')">
-        <div class="folder-icon-wrap"><i class="fa-solid fa-folder-open"></i></div>
-        <div class="folder-label">Journal Covers</div>
-        <div class="folder-sub">A5 · 4 covers</div>
-      </div>
-      <div class="folder-float" data-aos="fade-up" data-aos-delay="300" onclick="openGallery('notebooks')">
-        <div class="folder-icon-wrap"><i class="fa-solid fa-folder-open"></i></div>
-        <div class="folder-label">Notebooks</div>
-        <div class="folder-sub">A5 · 3 designs</div>
+<!-- ═══════════════════════════════════════════════
+     EXPERIENCE
+     ═══════════════════════════════════════════════ -->
+<section id="experience" class="snap-section">
+  <div class="section-container">
+    <div class="section-header-row">
+      <div>
+        <div class="section-eyebrow">My Journey</div>
+        <h2 class="section-heading">Experience <em>Timeline</em></h2>
       </div>
     </div>
-    <div class="services-row" data-aos="fade-up">
-      <div class="service-pill" onclick="openServiceModal('tshirts')"><i class="fa-solid fa-shirt"></i> T-Shirts</div>
-      <div class="service-pill" onclick="openServiceModal('logos')"><i class="fa-solid fa-pen-ruler"></i> Logos</div>
-      <div class="service-pill" onclick="openServiceModal('packaging')"><i class="fa-solid fa-box"></i> Packaging</div>
-      <div class="service-pill" onclick="openServiceModal('stationery')"><i class="fa-solid fa-bookmark"></i> Stationery</div>
-      <div class="service-pill" onclick="openServiceModal('presentations')"><i class="fa-solid fa-display"></i> Presentations</div>
-      <div class="service-pill" onclick="openServiceModal('latex')"><i class="fa-solid fa-file-lines"></i> LaTeX / Reports</div>
-      <div class="service-pill" onclick="openServiceModal('books')"><i class="fa-solid fa-book"></i> Books & Magazines</div>
-      <div class="service-pill" onclick="openServiceModal('video')"><i class="fa-solid fa-video"></i> Video & Motion</div>
+
+    <div class="exp-timeline-wrap">
+      <!-- Timeline line -->
+      <div class="tl-line">
+        <div class="tl-line-fill" id="tl-fill"></div>
+      </div>
+
+      <div class="tl-events">
+        <div class="tl-event" data-aos-custom>
+          <div class="tl-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="tl-card">
+            <div class="tlc-year">2021 – 2025</div>
+            <div class="tlc-type">Education</div>
+            <h4>CS Bachelor's Degree</h4>
+            <p class="tlc-org"><i class="fa-solid fa-building-columns"></i> USTHB, Algiers</p>
+            <p>Web development, software engineering, networks and data structures. Graduated with a strong technical foundation.</p>
+            <div class="tlc-tags"><span>CS</span><span>Full-Stack</span><span>Algorithms</span></div>
+          </div>
+        </div>
+
+        <div class="tl-event right" data-aos-custom>
+          <div class="tl-dot"><i class="fa-solid fa-store"></i></div>
+          <div class="tl-card">
+            <div class="tlc-year">2023 – 2024</div>
+            <div class="tlc-type">Entrepreneurship</div>
+            <h4>Founder · Rukonsky</h4>
+            <p class="tlc-org"><i class="fa-brands fa-instagram"></i> E-Commerce Brand</p>
+            <p>Built the brand from zero: identity, content strategy, logistics and customer service — full ownership.</p>
+            <div class="tlc-tags"><span>Branding</span><span>Marketing</span><span>Design</span></div>
+          </div>
+        </div>
+
+        <div class="tl-event" data-aos-custom>
+          <div class="tl-dot"><i class="fa-solid fa-trophy"></i></div>
+          <div class="tl-card">
+            <div class="tlc-year">2022 – 2024</div>
+            <div class="tlc-type">Leadership</div>
+            <h4>Team Leader · Micro Club USTHB</h4>
+            <p class="tlc-org"><i class="fa-solid fa-users"></i> University Tech Club</p>
+            <p>Led the online events team. HR member of the English Speakers Club. Hackathon staff 2023.</p>
+            <div class="tlc-tags"><span>Leadership</span><span>Events</span><span>HR</span></div>
+          </div>
+        </div>
+
+        <div class="tl-event right" data-aos-custom>
+          <div class="tl-dot"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <div class="tl-card">
+            <div class="tlc-year">2024 – Present</div>
+            <div class="tlc-type">Education</div>
+            <h4>CS Teacher & English Tutor</h4>
+            <p class="tlc-org"><i class="fa-solid fa-school"></i> Private School & ABI Language School</p>
+            <p>Writing curriculum, running classes and making complex subjects accessible and engaging.</p>
+            <div class="tlc-tags"><span>Teaching</span><span>Curriculum</span><span>Communication</span></div>
+          </div>
+        </div>
+
+        <div class="tl-event" data-aos-custom>
+          <div class="tl-dot"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="tl-card">
+            <div class="tlc-year">2025 – Present</div>
+            <div class="tlc-type">Remote Work</div>
+            <h4>IT Assistant & Full-Stack Dev</h4>
+            <p class="tlc-org"><i class="fa-solid fa-globe"></i> IJSchool · France · Remote</p>
+            <p>Built their website and implemented automations that reduced manual work by 60%.</p>
+            <div class="tlc-tags"><span>React</span><span>Full-Stack</span><span>Automation</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Row -->
+    <div class="certs-strip">
+      <div class="cert-badge">
+        <div class="cb-icon"><i class="fa-solid fa-earth-africa"></i></div>
+        <div class="cb-text">
+          <strong>IELTS Academic</strong>
+          <span>C1 · 7.5 / 9.0 · Oct 2025</span>
+        </div>
+      </div>
+      <div class="cert-badge">
+        <div class="cb-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+        <div class="cb-text">
+          <strong>Public Speaking</strong>
+          <span>Wonder Works Academy · 2023</span>
+        </div>
+      </div>
+      <div class="cert-badge">
+        <div class="cb-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div class="cb-text">
+          <strong>4C Skills</strong>
+          <span>Creativity · Collaboration · 2023</span>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="wavy-bottom peach-wavy-b"></div>
 </section>
 
-<!-- GALLERY POPUP -->
+<!-- ═══════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════ -->
+<section id="contact" class="snap-section contact-dark">
+  <div class="contact-bg-grid"></div>
+  <div class="section-container contact-layout">
+
+    <div class="contact-left">
+      <div class="section-eyebrow light">Let's Connect</div>
+      <h2 class="section-heading light">Ready to <em>work together?</em></h2>
+      <p class="contact-desc">Open for freelance projects, collaborations and full-time positions. I reply within 24 hours.</p>
+
+      <div class="contact-info-stack">
+        <div class="ci-row" onclick="copyText('Mariaboudjelal17@gmail.com', this)">
+          <div class="ci-icon"><i class="fa-regular fa-envelope"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">Email</span>
+            <span class="ci-val">Mariaboudjelal17@gmail.com</span>
+          </div>
+          <div class="ci-copy"><i class="fa-regular fa-copy"></i></div>
+        </div>
+        <div class="ci-row" onclick="copyText('+213549572515', this)">
+          <div class="ci-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">WhatsApp</span>
+            <span class="ci-val">+213 549 572 515</span>
+          </div>
+          <div class="ci-copy"><i class="fa-regular fa-copy"></i></div>
+        </div>
+        <div class="ci-row">
+          <div class="ci-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">GitHub</span>
+            <span class="ci-val">mariabdj</span>
+          </div>
+        </div>
+        <div class="ci-row">
+          <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">Location</span>
+            <span class="ci-val">Algiers, Algeria 🇩🇿</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="availability-tag">
+        <span class="avail-pulse"></span>
+        Available for freelance & remote work
+      </div>
+
+      <div class="lang-block">
+        <div class="lang-pill">🇩🇿 Arabic · Native</div>
+        <div class="lang-pill">🇫🇷 French · Native</div>
+        <div class="lang-pill">🇬🇧 English · C1 (IELTS 7.5)</div>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <form class="contact-form" id="contact-form" onsubmit="submitForm(event)">
+        <div class="cf-row">
+          <div class="cf-group">
+            <label>Your Name</label>
+            <input type="text" name="from_name" placeholder="John Smith" required />
+          </div>
+          <div class="cf-group">
+            <label>Your Email</label>
+            <input type="email" name="from_email" placeholder="john@company.com" required />
+          </div>
+        </div>
+        <div class="cf-group">
+          <label>Service Needed</label>
+          <select name="service">
+            <option value="">Select a service…</option>
+            <option>Social Media Content</option>
+            <option>Logo & Branding</option>
+            <option>Packaging Design</option>
+            <option>Presentation Design</option>
+            <option>AI Art / Mockups</option>
+            <option>T-shirt Design</option>
+            <option>LaTeX / Reports</option>
+            <option>Video & Motion</option>
+            <option>Full Project</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label>Tell me about your project</label>
+          <textarea name="message" rows="4" placeholder="Describe your project, goals, timeline…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-btn" id="submit-btn">
+          <span>Send Message</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <div id="form-success" class="form-msg success hidden">
+          <i class="fa-solid fa-circle-check"></i> Message sent! I'll be in touch soon.
+        </div>
+        <div id="form-error" class="form-msg error hidden">
+          <i class="fa-solid fa-triangle-exclamation"></i> Something went wrong. Email me directly.
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- TOOLS BAR -->
+<div id="tools-bar">
+  <div class="tools-track-wrap">
+    <div class="tools-track" id="tools-track">
+      <span class="tool-pill"><i class="fa-solid fa-palette"></i> Canva Pro</span>
+      <span class="tool-pill"><i class="fa-solid fa-robot"></i> ChatGPT</span>
+      <span class="tool-pill"><i class="fa-solid fa-gem"></i> Gemini</span>
+      <span class="tool-pill"><i class="fa-brands fa-microsoft"></i> MS Designer</span>
+      <span class="tool-pill"><i class="fa-solid fa-scissors"></i> CapCut</span>
+      <span class="tool-pill"><i class="fa-solid fa-video"></i> Camtasia</span>
+      <span class="tool-pill"><i class="fa-solid fa-file-code"></i> LaTeX · Overleaf</span>
+      <span class="tool-pill"><i class="fa-brands fa-python"></i> Python</span>
+      <span class="tool-pill"><i class="fa-brands fa-java"></i> Java</span>
+      <span class="tool-pill"><i class="fa-brands fa-react"></i> React</span>
+      <span class="tool-pill"><i class="fa-brands fa-vuejs"></i> Vue.js</span>
+      <span class="tool-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+      <span class="tool-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+      <span class="tool-pill"><i class="fa-solid fa-chart-bar"></i> Power BI</span>
+      <span class="tool-pill"><i class="fa-brands fa-docker"></i> Docker</span>
+      <span class="tool-pill"><i class="fa-brands fa-github"></i> GitHub</span>
+      <!-- dup -->
+      <span class="tool-pill"><i class="fa-solid fa-palette"></i> Canva Pro</span>
+      <span class="tool-pill"><i class="fa-solid fa-robot"></i> ChatGPT</span>
+      <span class="tool-pill"><i class="fa-solid fa-gem"></i> Gemini</span>
+      <span class="tool-pill"><i class="fa-brands fa-microsoft"></i> MS Designer</span>
+      <span class="tool-pill"><i class="fa-solid fa-scissors"></i> CapCut</span>
+      <span class="tool-pill"><i class="fa-solid fa-video"></i> Camtasia</span>
+      <span class="tool-pill"><i class="fa-solid fa-file-code"></i> LaTeX · Overleaf</span>
+      <span class="tool-pill"><i class="fa-brands fa-python"></i> Python</span>
+      <span class="tool-pill"><i class="fa-brands fa-react"></i> React</span>
+      <span class="tool-pill"><i class="fa-brands fa-github"></i> GitHub</span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">MB<span class="logo-dot">.</span></div>
+    <p>Maria Boudjelal · Graphic Designer · AI Art Creator · Developer</p>
+    <p class="footer-copy">© 2025 Maria Boudjelal · Algiers, Algeria</p>
+    <button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+</footer>
+
+<!-- SERVICE MODAL -->
+<div id="service-overlay" class="overlay hidden">
+  <div class="service-modal-box" id="service-modal-box">
+    <button class="modal-close" onclick="closeServiceModal()"><i class="fa-solid fa-xmark"></i></button>
+    <div id="service-modal-content"></div>
+  </div>
+</div>
+
+<!-- GALLERY OVERLAY -->
 <div id="gallery-overlay" class="overlay hidden">
-  <div class="gallery-popup">
-    <button title="Close" class="close-btn" onclick="closeGallery()"><i class="fa-solid fa-xmark"></i></button>
-    <h3 id="gallery-title">Gallery</h3>
+  <div class="gallery-modal">
+    <button class="modal-close" onclick="closeGallery()"><i class="fa-solid fa-xmark"></i></button>
+    <h3 id="gallery-title"></h3>
     <div class="gallery-swiper swiper">
       <div class="swiper-wrapper" id="gallery-slides"></div>
       <div class="swiper-pagination"></div>
@@ -317,253 +776,9 @@
   </div>
 </div>
 
-<!-- SERVICE MODAL -->
-<div id="service-overlay" class="overlay hidden">
-  <div class="service-modal">
-    <button title="Close" class="close-btn" onclick="closeServiceModal()"><i class="fa-solid fabutton"></i></button>
-    <div id="service-modal-content"></div>
-  </div>
-</div>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="section-label">// my journey</div>
-      <h2 class="section-title">The Timeline ✦</h2>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
-        <div class="timeline-card">
-          <div class="tc-year">2021 – 2025</div>
-          <h4>CS Bachelor's Degree</h4>
-          <p class="tc-org">USTHB, Algiers</p>
-          <p>Studied web dev, software engineering, networks and data structures. Graduated.</p>
-          <div class="tc-tags"><span>CS</span><span>Full-Stack</span><span>Algorithms</span></div>
-        </div>
-      </div>
-      <div class="timeline-item right" data-aos="fade-left">
-        <div class="timeline-dot"><i class="fa-solid fa-store"></i></div>
-        <div class="timeline-card">
-          <div class="tc-year">2023 – 2024</div>
-          <h4>Founder · Rukonsky</h4>
-          <p class="tc-org">E-Commerce Brand · Instagram</p>
-          <p>I built the brand from zero: identity, content, logistics and customer service.</p>
-          <div class="tc-tags"><span>Branding</span><span>Marketing</span><span>Design</span></div>
-        </div>
-      </div>
-      <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-dot"><i class="fa-solid fa-chalkboard-user"></i></div>
-        <div class="timeline-card">
-          <div class="tc-year">2024 – Present</div>
-          <h4>CS Teacher & English Tutor</h4>
-          <p class="tc-org">Private School & ABI Language School</p>
-          <p>I write the lessons, run the classes and make it easy to understand.</p>
-          <div class="tc-tags"><span>Teaching</span><span>Communication</span><span>Curriculum</span></div>
-        </div>
-      </div>
-      <div class="timeline-item right" data-aos="fade-left">
-        <div class="timeline-dot"><i class="fa-solid fa-laptop-code"></i></div>
-        <div class="timeline-card">
-          <div class="tc-year">2025 – Present</div>
-          <h4>IT Assistant & Full-Stack Dev</h4>
-          <p class="tc-org">IJSchool · French School · Remote</p>
-          <p>Built their website and made automations that cut manual work by 60%.</p>
-          <div class="tc-tags"><span>React</span><span>Full-Stack</span><span>Automation</span></div>
-        </div>
-      </div>
-      <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-dot"><i class="fa-solid fa-trophy"></i></div>
-        <div class="timeline-card">
-          <div class="tc-year">2022 – 2024</div>
-          <h4>Team Leader · Micro Club USTHB</h4>
-          <p class="tc-org">Online Events · Hackathon Staff 2023</p>
-          <p>Led the team for online tech events. Also HR member in the English Speakers Club.</p>
-          <div class="tc-tags"><span>Leadership</span><span>Events</span><span>HR</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="certs-area" data-aos="fade-up">
-      <h3 class="certs-title">✦ Certifications</h3>
-      <div class="certs-row">
-        <div class="cert-card"><div class="cert-icon"><i class="fa-solid fa-earth-africa"></i></div><h4>IELTS Academic</h4><p>C1 Advanced · 7.5 / 9.0</p><span class="cert-date">October 2025</span></div>
-        <div class="cert-card"><div class="cert-icon"><i class="fa-solid fa-microphone-lines"></i></div><h4>Public Speaking</h4><p>The Academy of Wonder Works</p><span class="cert-date">August 2023</span></div>
-        <div class="cert-card"><div class="cert-icon"><i class="fa-solid fa-certificate"></i></div><h4>4C Skills</h4><p>Communication, Creativity, Critical Thinking, Collaboration</p><span class="cert-date">August 2023</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FUN ZONE -->
-<section id="funzone">
-  <div class="wavy-top"></div>
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="section-label">// play with me</div>
-      <h2 class="section-title">Fun Zone <i class="fa-solid fa-gamepad icon-accent"></i></h2>
-    </div>
-    <div class="funzone-grid">
-      <div class="fun-widget" data-aos="zoom-in" data-aos-delay="0">
-        <div class="fw-icon">🔮</div>
-        <h4>Design Oracle</h4>
-        <p>Ask something about design. Get an answer.</p>
-        <input type="text" id="oracle-input" placeholder="Ask something..." class="fun-input" />
-        <button class="fun-btn" onclick="askOracle()"><i class="fa-solid fa-wand-magic-sparkles"></i> Ask!</button>
-        <div id="oracle-answer" class="oracle-answer"></div>
-      </div>
-      <div class="fun-widget" data-aos="zoom-in" data-aos-delay="100">
-        <div class="fw-icon"><i class="fa-solid fa-swatchbook icon-swatch"></i></div>
-        <h4>Pink Palette</h4>
-        <p>Click for a random pink palette!</p>
-        <div id="palette-display" class="palette-display">
-          <div class="pal-swatch ps-1"></div>
-          <div class="pal-swatch ps-2"></div>
-          <div class="pal-swatch ps-3"></div>
-          <div class="pal-swatch ps-4"></div>
-          <div class="pal-swatch ps-5"></div>
-        </div>
-        <button class="fun-btn" onclick="generatePalette()"><i class="fa-solid fa-arrows-rotate"></i> New Palette</button>
-      </div>
-      <div class="fun-widget" data-aos="zoom-in" data-aos-delay="200">
-        <div class="fw-icon">🎉</div>
-        <h4>Celebration Button</h4>
-        <p>You deserve a little celebration!</p>
-        <button class="fun-btn confetti-btn" onclick="launchConfetti()"><i class="fa-solid fa-party-horn"></i> Pop It!</button>
-        <canvas id="confetti-canvas"></canvas>
-      </div>
-      <div class="fun-widget" data-aos="zoom-in" data-aos-delay="300">
-        <div class="fw-icon">💕</div>
-        <h4>Love Counter</h4>
-        <p>How much do you like my work?</p>
-        <div id="heart-counter" class="heart-counter">0</div>
-        <button class="fun-btn heart-btn" onclick="addHeart()"><i class="fa-solid fa-heart"></i> Add Love</button>
-        <div id="heart-message"></div>
-      </div>
-    </div>
-  </div>
-  <div class="wavy-bottom"></div>
-</section>
-
-<!-- TOOLKIT -->
-<section id="tools-bar">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="section-label">// tools i use</div>
-      <h2 class="section-title">My Toolkit <i class="fa-solid fa-screwdriver-wrench icon-accent"></i></h2>
-    </div>
-    <div class="tools-scroll-wrapper" data-aos="fade-up">
-      <div class="tools-scroll" id="tools-scroll-inner">
-        <div class="tool-badge"><i class="fa-solid fa-palette"></i> Canva Pro</div>
-        <div class="tool-badge"><i class="fa-solid fa-robot"></i> ChatGPT</div>
-        <div class="tool-badge"><i class="fa-solid fa-gem"></i> Gemini</div>
-        <div class="tool-badge"><i class="fa-brands fa-microsoft"></i> MS Designer</div>
-        <div class="tool-badge"><i class="fa-solid fa-scissors"></i> CapCut</div>
-        <div class="tool-badge"><i class="fa-solid fa-video"></i> Camtasia</div>
-        <div class="tool-badge"><i class="fa-solid fa-file-code"></i> LaTeX / Overleaf</div>
-        <div class="tool-badge"><i class="fa-brands fa-python"></i> Python</div>
-        <div class="tool-badge"><i class="fa-brands fa-java"></i> Java</div>
-        <div class="tool-badge"><i class="fa-brands fa-react"></i> React</div>
-        <div class="tool-badge"><i class="fa-brands fa-vuejs"></i> Vue.js</div>
-        <div class="tool-badge"><i class="fa-brands fa-js"></i> JavaScript</div>
-        <div class="tool-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
-        <div class="tool-badge"><i class="fa-solid fa-chart-bar"></i> Power BI</div>
-        <div class="tool-badge"><i class="fa-brands fa-docker"></i> Docker</div>
-        <div class="tool-badge"><i class="fa-brands fa-github"></i> GitHub</div>
-        <!-- duplicate -->
-        <div class="tool-badge"><i class="fa-solid fa-palette"></i> Canva Pro</div>
-        <div class="tool-badge"><i class="fa-solid fa-robot"></i> ChatGPT</div>
-        <div class="tool-badge"><i class="fa-solid fa-gem"></i> Gemini</div>
-        <div class="tool-badge"><i class="fa-brands fa-microsoft"></i> MS Designer</div>
-        <div class="tool-badge"><i class="fa-solid fa-scissors"></i> CapCut</div>
-        <div class="tool-badge"><i class="fa-solid fa-video"></i> Camtasia</div>
-        <div class="tool-badge"><i class="fa-solid fa-file-code"></i> LaTeX / Overleaf</div>
-        <div class="tool-badge"><i class="fa-brands fa-python"></i> Python</div>
-        <div class="tool-badge"><i class="fa-brands fa-java"></i> Java</div>
-        <div class="tool-badge"><i class="fa-brands fa-react"></i> React</div>
-        <div class="tool-badge"><i class="fa-brands fa-vuejs"></i> Vue.js</div>
-        <div class="tool-badge"><i class="fa-brands fa-js"></i> JavaScript</div>
-        <div class="tool-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
-        <div class="tool-badge"><i class="fa-solid fa-chart-bar"></i> Power BI</div>
-        <div class="tool-badge"><i class="fa-brands fa-docker"></i> Docker</div>
-        <div class="tool-badge"><i class="fa-brands fa-github"></i> GitHub</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="wavy-top peach-wavy"></div>
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="section-label">// let's connect</div>
-      <h2 class="section-title">Let's Work Together <span class="highlight-pink">✦</span></h2>
-      <p class="section-sub">Open for freelance, collabs and full-time work 💌</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-left" data-aos="fade-right">
-        <div class="contact-info-card" onclick="copyToClipboard('Mariaboudjelal17@gmail.com',this)">
-          <div class="cic-icon"><i class="fa-regular fa-envelope"></i></div>
-          <div class="cic-text"><span class="cic-label">Email</span><span class="cic-value">Mariaboudjelal17@gmail.com</span></div>
-          <div class="cic-copy"><i class="fa-regular fa-copy"></i> copy</div>
-        </div>
-        <div class="contact-info-card" onclick="copyToClipboard('+213-549-572-515',this)">
-          <div class="cic-icon"><i class="fa-brands fa-whatsapp"></i></div>
-          <div class="cic-text"><span class="cic-label">Phone / WhatsApp</span><span class="cic-value">+213 549 572 515</span></div>
-          <div class="cic-copy"><i class="fa-regular fa-copy"></i> copy</div>
-        </div>
-        <div class="contact-info-card">
-          <div class="cic-icon"><i class="fa-solid fa-location-dot"></i></div>
-          <div class="cic-text"><span class="cic-label">Location</span><span class="cic-value">Algiers, Algeria 🇩🇿</span></div>
-        </div>
-        <div class="contact-info-card">
-          <div class="cic-icon"><i class="fa-brands fa-github"></i></div>
-          <div class="cic-text"><span class="cic-label">GitHub</span><span class="cic-value">mariabdj</span></div>
-        </div>
-        <div class="availability-badge"><div class="avail-dot"></div><span>Available for freelance and remote work</span></div>
-        <div class="languages-card">
-          <h4><i class="fa-solid fa-globe"></i> Languages</h4>
-          <div class="lang-row">
-            <span class="lang-tag">🇩🇿 Arabic · Native</span>
-            <span class="lang-tag">🇫🇷 French · Native</span>
-            <span class="lang-tag">🇬🇧 English · C1 (IELTS 7.5)</span>
-          </div>
-        </div>
-      </div>
-      <div class="contact-right" data-aos="fade-left">
-        <form class="contact-form" id="contact-form" onsubmit="submitForm(event)">
-          <div class="form-group"><label><i class="fa-regular fa-user"></i> Your Name</label><input type="text" name="from_name" placeholder="What do I call you?" required /></div>
-          <div class="form-group"><label><i class="fa-regular fa-envelope"></i> Your Email</label><input type="email" name="from_email" placeholder="your@email.com" required /></div>
-          <div class="form-group"><label><i class="fa-solid fa-list-check"></i> What do you need?</label>
-            <select title="service" name="service">
-              <option>Social Media Content</option><option>Logo & Branding</option><option>Packaging Design</option>
-              <option>Presentation Design</option><option>AI Art / Mockups</option><option>T-shirt Design</option>
-              <option>Full Project</option><option>Something else</option>
-            </select>
-          </div>
-          <div class="form-group"><label><i class="fa-regular fa-comment-dots"></i> Tell me more</label><textarea rows="4" name="message" placeholder="Tell me about your project..."></textarea></div>
-          <button type="submit" class="btn-primary full-btn"><i class="fa-solid fa-paper-plane"></i> Send it!</button>
-          <div id="form-success" class="form-success hidden"><i class="fa-solid fa-circle-check"></i> Got it! I'll reply soon 🌸</div>
-          <div id="form-error" class="form-error hidden"><i class="fa-solid fa-triangle-exclamation"></i> Something went wrong. Email me directly.</div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer id="footer">
-  <div class="footer-inner">
-    <div class="footer-logo">✦ Maria Boudjelal</div>
-    <p class="footer-tagline">Graphic Designer · AI Art Creator · Developer</p>
-    <p class="footer-copy">Made with 💕 · © 2025 Maria Boudjelal</p>
-    <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-arrow-up"></i> Back to top</button>
-  </div>
-</footer>
+<canvas id="confetti-canvas"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
